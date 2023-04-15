@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- thẻ main là thẻ chứa bố cục của trang -->
-    <main>
+    <main id="home">
       <header class="fix-header">
         <div class="content">
           <nav class="navbar">
@@ -29,8 +29,8 @@
 
             <!-- Navigation -->
             <ul>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Featuers</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#featured">Featuers</a></li>
               <li><a href="#!">Services</a></li>
               <li><a href="#!">Resource</a></li>
               <li><a href="#!">Contact</a></li>
@@ -45,23 +45,26 @@
       </header>
       <!--Header  -->
       <header class="header">
-        <div class="content">
-          <div class="hero">
-            <div class="info">
-              <p class="sub-title">Welcome to Besnik Agency</p>
-              <h1 class="title">Discover a place you'll love to live.</h1>
-              <p class="desc">
-                Get the best real estate deals first, before they hit the mass market! HOT
-                FORECLOSURE DEALS with one simple search.
-              </p>
-              <!-- cta = call to action: là kêu gọi hành động -->
-              <a href="#!" class="btn hero-cta">More About Us</a>
+        <div class="hero-wrap">
+
+          <div class="content">
+            <div class="hero">
+              <div class="info">
+                <p class="sub-title">Welcome to Besnik Agency</p>
+                <h1 class="title">Discover a place you'll love to live.</h1>
+                <p class="desc">
+                  Get the best real estate deals first, before they hit the mass market! HOT
+                  FORECLOSURE DEALS with one simple search.
+                </p>
+                <!-- cta = call to action: là kêu gọi hành động -->
+                <a href="#!" class="btn hero-cta">More About Us</a>
+              </div>
+              <img
+                src="./assets/img/hero-img.svg"
+                alt="Discover a place you'll love to live."
+                class="hero-img"
+              />
             </div>
-            <img
-              src="./assets/img/hero-img.svg"
-              alt="Discover a place you'll love to live."
-              class="hero-img"
-            />
           </div>
         </div>
       </header>
@@ -146,7 +149,7 @@
       </div>
       <!-- ======== End guides ================ -->
       <!-- Featured -->
-      <div class="featured">
+      <div id="featured" class="featured">
         <div class="content">
           <header>
             <h2 class="sub-title">Featured Properties</h2>

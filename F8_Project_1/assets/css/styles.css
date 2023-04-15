@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 html {
   font-size: 62.5%;
@@ -57,7 +61,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 90px);
+
   background: #e6f0ff;
 }
 .navbar {
@@ -92,13 +96,18 @@ a {
   margin-left: 18px;
   padding: 13px 16px;
 }
-.hero {
-  padding-top: 130px;
+.hero-wrap {
+  position: relative;
+  display: flex;
+justify-content: center;
+  flex-direction: column;
+  background-color: #e6f0ff;
+  height: calc(100vh - 90px);
 }
-.hero .info {
+.hero-wrap .info {
   width: 51%; /* lấy witdh ở phần content / width info trong fima*/
 }
-.hero .sub-title {
+.hero-wrap .sub-title {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.5; /*27/18*/
